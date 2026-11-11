@@ -2,12 +2,6 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-print("Path to dataset files:", path)
-st.set_page_config(page_title="Twitch Viewership Analytics", layout="wide")
-st.title("Twitch Viewership & Streaming Analytics")
-st.caption("Top Games on Twitch, 2016-2023")
-
-
 @st.cache_data
 def load_data():
     df = pd.read_csv("Twitch_game_data.csv", encoding="latin-1")
