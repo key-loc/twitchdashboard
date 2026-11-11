@@ -2,10 +2,6 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-import kagglehub
-
-path = kagglehub.dataset_download("rankirsh/evolution-of-top-games-on-twitch")
-
 print("Path to dataset files:", path)
 st.set_page_config(page_title="Twitch Viewership Analytics", layout="wide")
 st.title("Twitch Viewership & Streaming Analytics")
